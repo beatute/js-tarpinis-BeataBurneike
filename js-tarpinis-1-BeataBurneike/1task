@@ -1,0 +1,32 @@
+// 1.1 task:
+cars.filter((car) => {
+    return car.Miles_per_Gallon !== null;
+});
+
+// 1.2 task:
+cars.filter((car) => {
+    return car.Miles_per_Gallon === null;
+});
+
+// 1.3 task:
+cars.filter((car) => {
+    return car.Miles_per_Gallon >= 15 && car.Cylinders == 8;
+});
+
+// 1.4 task:
+cars.map((car)=>{
+    return{
+        ...car,
+        Kilowatts: car.Horsepower * 0.7457,
+    }
+});
+
+// 1.5 task:
+cars.sort((a,z) =>{
+    return a.Weight_in_lbs - z.Weight_in_lbs
+});
+
+// 1.6 task:
+cars.every((car) =>{
+    return car.Origin === 'USA';
+});
